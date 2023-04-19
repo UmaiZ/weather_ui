@@ -4,7 +4,7 @@ import 'dart:math';
 class ParallaxRain extends StatefulWidget {
   ParallaxRain(
       {this.key,
-      this.numberOfDrops = 10,
+      this.numberOfDrops = 25,
       this.dropFallSpeed = 1,
       this.numberOfLayers = 3,
       this.dropHeight = 20,

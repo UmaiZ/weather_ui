@@ -213,7 +213,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             AnimatedContainer(
               duration: Duration(milliseconds: 600),
-              height: showdate ? res_height * 0.185 : res_height * 0.125,
+              height: showdate ? res_height * 0.15 : res_height * 0.125,
               width: double.infinity,
               decoration: const BoxDecoration(
                   color: Colors.white,
@@ -247,7 +247,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: [
                     Container(
                       width: 70,
-                      height: 140,
+                      height: 120,
                       color: Color(0xffff5580),
                       child: Icon(
                         Icons.menu,
@@ -257,7 +257,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     AnimatedContainer(
                       width: 70,
-                      height: showdate ? 120 : 0,
+                      height: showdate ? 110 : 0,
                       color: Color(0xfff7446f),
                       duration: Duration(milliseconds: 400),
                       child: Column(
@@ -293,14 +293,22 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Positioned(
+              right: 0,
+              top: res_height * 0.275,
+              child: Image.asset(
+                'assets/images/girl.png',
+                height: res_height * 0.5,
+              ),
+            ),
+            Positioned(
               left: 20,
-              top: res_height * 0.225,
+              top: res_height * 0.175,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const [
                   Text(
                     '19°',
-                    style: TextStyle(fontSize: 60, color: Colors.white),
+                    style: TextStyle(fontSize: 50, color: Colors.white),
                   ),
                   Text(
                     'Feels like 17°',
@@ -312,13 +320,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   Icon(
                     Icons.cloudy_snowing,
                     color: Colors.white,
-                    size: 50,
+                    size: 40,
                   )
                 ],
               ),
             ),
             Positioned(
-              bottom: res_height * 0.05,
+              bottom: res_height * 0.02,
               left: 20,
               child: Text(
                 'Palestine',
